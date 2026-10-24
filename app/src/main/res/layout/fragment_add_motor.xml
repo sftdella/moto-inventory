@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tambah Motor"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/text_primary" />
+        </LinearLayout>
+
+        <!-- Info Dasar -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@color/surface"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Informasi Dasar"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/primary"
+                    android:paddingBottom="14dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Motor *"
+                    style="@style/PCM.TextInputLayout"
+                    android:layout_marginBottom="12dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_nam_motor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:fontFamily="@font/poppins_regular" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Merk *"
+                    style="@style/PCM.TextInputLayout"
+                    android:layout_marginBottom="12dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_merk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:fontFamily="@font/poppins_regular" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:hint="Tahun *"
+                        android:layout_marginEnd="8dp" style="@style/PCM.TextInputLayout">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_tahun"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:inputType="number" android:maxLength="4"
+                            android:fontFamily="@font/poppins_regular" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:hint="Warna *"
+                        style="@style/PCM.TextInputLayout">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_warna"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:inputType="textCapWords"
+                            android:fontFamily="@font/poppins_regular" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Informasi Harga -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@color/surface"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Informasi Harga"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/primary"
+                    android:paddingBottom="14dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Harga Beli (Rp)"
+                    style="@style/PCM.TextInputLayout"
+                    android:layout_marginBottom="12dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_harga_beli"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:fontFamily="@font/poppins_regular" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Harga Jual (Rp)"
+                    style="@style/PCM.TextInputLayout"
+                    android:layout_marginBottom="12dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_harga_jual"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:fontFamily="@font/poppins_regular" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Estimasi Profit Preview -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    app:cardBackgroundColor="@color/surface_variant"
+                    app:cardElevation="0dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:padding="12dp" android:gravity="center_vertical">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="Estimasi Profit"
+                            android:textColor="@color/text_secondary" android:textSize="13sp"
+                            android:fontFamily="@font/poppins_regular" />
+                        <TextView android:id="@+id/tv_selisih_value"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Rp 0" android:textSize="15sp" android:fontFamily="@font/poppins_bold"
+                            android:textColor="@color/success" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Status Motor -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@color/surface"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status Motor"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/primary"
+                    android:paddingBottom="12dp" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chip_group_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_status_tersedia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tersedia"
+                        style="@style/PCM.Chip.Status"
+                        android:checked="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_status_servis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Proses Servis"
+                        style="@style/PCM.Chip.Status" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_status_approval"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Menunggu Approval"
+                        style="@style/PCM.Chip.Status" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_status_terjual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terjual"
+                        style="@style/PCM.Chip.Status" />
+                </com.google.android.material.chip.ChipGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Data Kendaraan -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@color/surface"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data Kendaraan"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/primary"
+                    android:paddingBottom="14dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:hint="Nomor Polisi" style="@style/PCM.TextInputLayout"
+                    android:layout_marginBottom="12dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_nomor_polisi"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:inputType="textCapCharacters" android:fontFamily="@font/poppins_regular" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:hint="Nomor Rangka" style="@style/PCM.TextInputLayout"
+                    android:layout_marginBottom="12dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_nomor_rangka"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:inputType="textCapCharacters" android:fontFamily="@font/poppins_regular" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:hint="Nomor Mesin" style="@style/PCM.TextInputLayout"
+                    android:layout_marginBottom="12dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_nomor_mesin"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:inputType="textCapCharacters" android:fontFamily="@font/poppins_regular" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:hint="Catatan" style="@style/PCM.TextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_catatan"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:inputType="textMultiLine" android:minLines="2"
+                        android:fontFamily="@font/poppins_regular" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Action Buttons -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Simpan Motor"
+            android:fontFamily="@font/poppins_bold"
+            style="@style/PCM.Button.Primary"
+            android:layout_marginBottom="10dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_batal"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Batal"
+            android:fontFamily="@font/poppins_medium"
+            style="@style/PCM.Button.Outlined"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+</ScrollView>

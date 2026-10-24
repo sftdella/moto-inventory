@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PCM Blue Professional Theme -->
+    <color name="primary">#1565C0</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="primary_light">#1976D2</color>
+    <color name="primary_surface">#E3F2FD</color>
+    <color name="secondary">#42A5F5</color>
+    <color name="secondary_light">#90CAF9</color>
+    <color name="accent">#26A69A</color>
+    <color name="accent_light">#B2DFDB</color>
+
+    <!-- Status Colors -->
+    <color name="success">#4CAF50</color>
+    <color name="success_light">#E8F5E9</color>
+    <color name="warning">#FFC107</color>
+    <color name="warning_light">#FFF8E1</color>
+    <color name="danger">#F44336</color>
+    <color name="danger_light">#FFEBEE</color>
+
+    <!-- Profit Colors -->
+    <color name="profit_positive">#4CAF50</color>
+    <color name="profit_negative">#F44336</color>
+
+    <!-- Background & Surface -->
+    <color name="background">#F5F7FA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F0F4FF</color>
+    <color name="divider">#E0E6F0</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1A2341</color>
+    <color name="text_secondary">#546E8A</color>
+    <color name="text_hint">#9EB3C8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Status Motor Colors -->
+    <color name="status_tersedia">#4CAF50</color>
+    <color name="status_tersedia_bg">#E8F5E9</color>
+    <color name="status_servis">#FF9800</color>
+    <color name="status_servis_bg">#FFF3E0</color>
+    <color name="status_approval">#1565C0</color>
+    <color name="status_approval_bg">#E3F2FD</color>
+    <color name="status_terjual">#9C27B0</color>
+    <color name="status_terjual_bg">#F3E5F5</color>
+
+    <!-- Card colors (legacy refs kept for compatibility) -->
+    <color name="card_tersedia">#E8F5E9</color>
+    <color name="card_terjual">#F3E5F5</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <!-- Role colors -->
+    <color name="role_admin">#1565C0</color>
+    <color name="role_admin_bg">#E3F2FD</color>
+    <color name="role_manager">#2E7D32</color>
+    <color name="role_manager_bg">#E8F5E9</color>
+    <color name="role_staff">#E65100</color>
+    <color name="role_staff_bg">#FFF3E0</color>
+
+    <!-- Bottom Nav -->
+    <color name="bottom_nav_selected">#1565C0</color>
+    <color name="bottom_nav_unselected">#9EB3C8</color>
+</resources>

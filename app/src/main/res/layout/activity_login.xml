@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp"
+        android:minHeight="600dp">
+
+        <!-- Logo Area -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/primary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="PCM"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_extrabold"
+                android:gravity="center"
+                android:letterSpacing="0.05" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PCM Inventory"
+            android:textSize="26sp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pardi Ciken Motor"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="40dp" />
+
+        <!-- Login Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@color/surface">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="28dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masuk ke Akun Anda"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_marginBottom="20dp" />
+
+                <!-- Username -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    style="@style/PCM.TextInputLayout"
+                    android:layout_marginBottom="16dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:fontFamily="@font/poppins_regular"
+                        android:imeOptions="actionNext" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Password -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    style="@style/PCM.TextInputLayout"
+                    app:endIconMode="password_toggle"
+                    android:layout_marginBottom="28dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:fontFamily="@font/poppins_regular"
+                        android:imeOptions="actionDone" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Error Text -->
+                <TextView
+                    android:id="@+id/tv_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/danger"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginBottom="16dp"
+                    android:visibility="gone" />
+
+                <!-- Login Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="Masuk"
+                    style="@style/PCM.Button.Primary"
+                    android:fontFamily="@font/poppins_bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Loading indicator -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" />
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PCM Inventory v2.0"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/text_hint"
+            android:layout_marginTop="40dp" />
+
+    </LinearLayout>
+</ScrollView>

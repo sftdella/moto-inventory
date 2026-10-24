@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.MotoInventory" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/pink_primary</item>
+        <item name="colorPrimaryDark">@color/pink_primary_dark</item>
+        <item name="colorAccent">@color/pink_accent</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/purple_accent</item>
+    </style>
+
+    <style name="Theme.MotoInventory" parent="Base.Theme.MotoInventory" />
+
+    <style name="CardStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardBackgroundColor">@color/card_background</item>
+    </style>
+
+    <style name="StatCard" parent="CardStyle">
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">6dp</item>
+    </style>
+</resources>

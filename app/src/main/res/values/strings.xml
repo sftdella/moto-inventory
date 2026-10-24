@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PCM Inventory</string>
+    <string name="app_subtitle">Pardi Ciken Motor</string>
+
+    <!-- Nav -->
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_inventory">Inventory</string>
+    <string name="menu_laporan">Laporan</string>
+    <string name="menu_users">Pengguna</string>
+    <string name="menu_aktivitas">Aktivitas</string>
+
+    <!-- Login -->
+    <string name="login_title">Selamat Datang</string>
+    <string name="login_subtitle">Masuk ke PCM Inventory</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Masuk</string>
+    <string name="btn_logout">Keluar</string>
+
+    <!-- Motor Status -->
+    <string name="status_tersedia">Tersedia</string>
+    <string name="status_servis">Proses Servis</string>
+    <string name="status_approval">Menunggu Approval</string>
+    <string name="status_terjual">Terjual</string>
+
+    <!-- Roles -->
+    <string name="role_admin">Admin</string>
+    <string name="role_manager">Manager</string>
+    <string name="role_staff">Staff</string>
+
+    <!-- Common actions -->
+    <string name="action_save">Simpan</string>
+    <string name="action_cancel">Batal</string>
+    <string name="action_delete">Hapus</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_add">Tambah</string>
+    <string name="action_export">Export PDF</string>
+
+    <!-- Errors -->
+    <string name="error_field_required">Field ini wajib diisi</string>
+    <string name="error_invalid_year">Tahun tidak valid</string>
+    <string name="error_login_failed">Username atau password salah</string>
+    <string name="error_permission">Anda tidak memiliki akses fitur ini</string>
+</resources>

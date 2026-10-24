@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MotoInventory 🏍️</string>
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_inventory">Inventory</string>
+    <string name="menu_laporan">Laporan</string>
+</resources>

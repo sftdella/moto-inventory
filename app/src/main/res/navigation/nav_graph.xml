@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.motoinventory.ui.dashboard.DashboardFragment"
+        android:label="Dashboard">
+        <action
+            android:id="@+id/action_dashboard_to_addMotor"
+            app:destination="@id/addMotorFragment" />
+        <action
+            android:id="@+id/action_dashboard_to_detail"
+            app:destination="@id/detailMotorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inventoryFragment"
+        android:name="com.example.motoinventory.ui.inventory.InventoryFragment"
+        android:label="Inventory">
+        <action
+            android:id="@+id/action_inventory_to_addMotor"
+            app:destination="@id/addMotorFragment" />
+        <action
+            android:id="@+id/action_inventory_to_detail"
+            app:destination="@id/detailMotorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/laporanFragment"
+        android:name="com.example.motoinventory.ui.laporan.LaporanFragment"
+        android:label="Laporan" />
+
+    <fragment
+        android:id="@+id/userManagementFragment"
+        android:name="com.example.motoinventory.ui.users.UserManagementFragment"
+        android:label="Pengguna" />
+
+    <fragment
+        android:id="@+id/aktivitasFragment"
+        android:name="com.example.motoinventory.ui.aktivitas.AktivitasFragment"
+        android:label="Aktivitas" />
+
+    <fragment
+        android:id="@+id/addMotorFragment"
+        android:name="com.example.motoinventory.ui.add.AddMotorFragment"
+        android:label="Tambah Motor">
+        <argument
+            android:name="motorId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailMotorFragment"
+        android:name="com.example.motoinventory.ui.detail.DetailMotorFragment"
+        android:label="Detail Motor">
+        <argument
+            android:name="motorId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_detail_to_addMotor"
+            app:destination="@id/addMotorFragment" />
+    </fragment>
+
+</navigation>

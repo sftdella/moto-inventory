@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/surface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Avatar Circle -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="14dp"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/tv_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/white"
+                android:background="@color/primary" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/text_primary" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/text_secondary" />
+
+            <TextView
+                android:id="@+id/tv_last_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/text_hint" />
+        </LinearLayout>
+
+        <!-- Role Badge -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/tv_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:textSize="11sp"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Action buttons -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_edit"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@android:drawable/ic_menu_edit"
+                    android:background="@null"
+                    android:tint="@color/primary"
+                    android:layout_marginEnd="4dp" />
+
+                <ImageButton
+                    android:id="@+id/btn_reset_pw"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@android:drawable/ic_lock_lock"
+                    android:background="@null"
+                    android:tint="@color/warning"
+                    android:layout_marginEnd="4dp" />
+
+                <ImageButton
+                    android:id="@+id/btn_delete"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@android:drawable/ic_menu_delete"
+                    android:background="@null"
+                    android:tint="@color/danger" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
